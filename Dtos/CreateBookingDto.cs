@@ -14,6 +14,6 @@ namespace BookingApi.Dtos
         [Required]
         public DateTime StartTime { get; set; }
         [Required]
-        public DateTime EndTime { get; set }
+        public DateTime EndTime { get; set; }
     }
 }
