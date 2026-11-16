@@ -7,6 +7,10 @@ namespace BookingApi.Models
         public int Id { get; set; }
 
         [Required]
+        public int RoomId { get; set; }
+        public Room? Room { get; set; }
+
+        [Required]
         [MaxLength(100)]
         public string UserName {  get; set; } = string.Empty;
 

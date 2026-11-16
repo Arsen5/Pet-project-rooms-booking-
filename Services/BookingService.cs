@@ -44,7 +44,7 @@ namespace BookingApi.Services
         {
             return await _db.Bookings
                 .AsNoTracking()
-                .Where(b => b.Id ==  roomId)
+                .Where(b => b.RoomId ==  roomId)
                 .ToListAsync();
         }
     }
